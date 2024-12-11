@@ -20,6 +20,17 @@ const Task = ({ id, title, isComplete }) => {
   );
 };
 
+// Wave-01 implementation
+
+// const Task = ({ id, title, isComplete }) => {
+//   return (
+//     <li className="tasks__item">
+//       <button className="tasks__item__toggle">{title}</button>
+//       <button className="tasks__item__remove button">x</button>
+//     </li>
+//   );
+// };
+
 Task.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
