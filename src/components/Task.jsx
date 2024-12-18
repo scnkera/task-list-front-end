@@ -10,7 +10,7 @@ const Task = ({ id, title, isComplete, onClickCallback, onDeleteCallback }) => {
       >
         {isComplete ? '✔️ ' : '⬜ '}
       </button>
-      <span>{title}</span> {/* Title is now separate */}
+      <span>{title}</span>
       <button className="tasks__item__remove button" onClick={() => onDeleteCallback(id)}>x</button>
     </li>
   );
