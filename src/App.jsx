@@ -38,11 +38,7 @@ const App = () => {
       </header>
       <main>
         <div>
-          <TaskList 
-            tasks={tasks} 
-            onToggleComplete={toggleTaskComplete}
-            onDeleteTask={deleteTask}
-          />
+          <TaskList tasks={tasks} onToggleComplete={toggleTaskComplete} onDeleteTask={deleteTask}/>
         </div>
       </main>
     </div>
