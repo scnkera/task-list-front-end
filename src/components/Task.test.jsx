@@ -19,7 +19,7 @@ describe('Task', () => {
     expect(screen.getByText('Test Title')).toBeInTheDocument();
   });
 
-  testwave 3('Runs callbacks when buttons clicked', () => {
+  test ('Runs callbacks when buttons clicked', () => {
     // Arrange
     const clickCallback = vi.fn();
     const deleteCallback = vi.fn();

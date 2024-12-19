@@ -5,12 +5,13 @@ const Task = ({ id, title, isComplete, onClickCallback, onDeleteCallback }) => {
   return (
     <li className="tasks__item">
       <button
-        className="tasks__item__toggle"
+        className={`tasks__item__toggle ${isComplete ? 'tasks__item__toggle--completed' : ''}`}
         onClick={() => onClickCallback(id)}
       >
         {isComplete ? '✔️ ' : '⬜ '}
       </button>
-      <button className="tasks__item__remove button" onClick={() => onDeleteCallback(id)}>x</button>
+      <span>{title}</span>
+      <button className="tasks__item__remove button" onClick={() => onDeleteCallback(id)} >x</button>
     </li>
   );
 };
